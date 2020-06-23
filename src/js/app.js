@@ -4,6 +4,7 @@ var Vector2 = require('vector2');
 var Motor = require('ui/vibe');
 var Settings = require('settings');
 var Clay = require('clay');
+var Feature = require('platform/feature');
 var clayConfig = require('config');
 var clay = new Clay(clayConfig, null, {autoHandleEvents: false});
 
@@ -36,7 +37,7 @@ console.log("Got Settings: " + token + ", " + isABot);
 var loadingCard = new UI.Card({
 	fullscreen:true, 
 	title: 'Loading...',
-	titleColor: 'orange'
+	titleColor: Feature.color('orange', 'black')
 });
 
 if(!token){
@@ -49,10 +50,10 @@ loadingCard.show();
 
 var serverMenu = new UI.Menu({
 	fullscreen:true,
-	backgroundColor: 'liberty',
-	textColor: 'white',
-	highlightBackgroundColor: 'indigo',
-	highlightTextColor: 'white',
+	backgroundColor: Feature.color('liberty', "white"),
+	textColor: Feature.color('white',"black"),
+	highlightBackgroundColor: Feature.color('indigo',"#AA5500"),
+	highlightTextColor: Feature.color('white',"black"),
 	sections: [
 		{title: 'Servers'},
 	]
@@ -65,9 +66,9 @@ if(!isABot){
 
 var channelMenu = new UI.Menu({
 	fullscreen:true,
-	backgroundColor: 'liberty',
-	textColor: 'white',
-	highlightBackgroundColor: 'indigo',
+	backgroundColor: Feature.color('liberty',"white"),
+	textColor: "black",
+	highlightBackgroundColor: Feature.color('indigo',"black"),
 	highlightTextColor: 'white',
 	sections: [{
 	  title: 'Channels',
@@ -79,8 +80,8 @@ var chatList = new UI.Card({
 	fullscreen:true, 
 	scrollable:true,
 	title: 'Loading...',
-	titleColor: 'orange',
-	subtitleColor: 'chrome yellow',
+	titleColor: Feature.color('orange',"black"),
+	subtitleColor: Feature.color('chrome yellow',"black"),
 	bodyColor: 'black',
 });
 

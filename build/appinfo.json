@@ -1,0 +1,54 @@
+{
+    "targetPlatforms": [
+        "aplite", 
+        "basalt", 
+        "chalk", 
+        "diorite"
+    ], 
+    "uuid": "19a7512c-1ba8-4576-9d44-69b797bca74d", 
+    "messageKeys": {}, 
+    "companyName": "triveri@outlook.com", 
+    "versionLabel": "9.0", 
+    "capabilities": [
+        "configurable"
+    ], 
+    "sdkVersion": "3", 
+    "appKeys": {}, 
+    "longName": "Discord", 
+    "versionCode": 1, 
+    "shortName": "Discord", 
+    "watchapp": {
+        "hiddenApp": false, 
+        "watchface": false
+    }, 
+    "resources": {
+        "media": [
+            {
+                "type": "bitmap", 
+                "name": "IMAGE_MENU_ICON", 
+                "file": "images/appicon.png"
+            }, 
+            {
+                "type": "bitmap", 
+                "name": "IMAGE_LOGO_SPLASH", 
+                "file": "images/logo_splash.png"
+            }, 
+            {
+                "type": "bitmap", 
+                "name": "IMAGE_TILE_SPLASH", 
+                "file": "images/tile_splash.png"
+            }, 
+            {
+                "type": "font", 
+                "name": "MONO_FONT_14", 
+                "file": "fonts/UbuntuMono-Regular.ttf"
+            }, 
+            {
+                "menuIcon": true, 
+                "type": "bitmap", 
+                "name": "IMAGES_DISCORD_PNG", 
+                "file": "images/Discord.png"
+            }
+        ]
+    }
+}
